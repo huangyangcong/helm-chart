@@ -117,6 +117,9 @@ uiService:
   type: "NodePort"
   annotations: {}
 
+consulService:
+  type: "NodePort"
+
 ConsulConfig: []
 #  - type: secret
 #    name: consul-defaults
