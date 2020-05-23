@@ -34,6 +34,6 @@ spec:
   - name: consuldns-udp
     protocol: "UDP"
     port: {{.Values.ConsulDnsPort}}
-  clusterIP: None
+  type: "{{ .Values.consulService.type }}"
   selector:
     component: "{{ .Release.Name }}-{{ .Values.Component }}"
